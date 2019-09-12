@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>newCircle</title>
+</head>
+<body>
+<script>
+    let MyCircle = function (radius, color) {
+        this.radius = parseInt(radius);
+        this.color = parseFloat(color);
+        this.getRadius = function () {
+            return this.radius;
+        }
+        this.getColor = function () {
+            return this.color;
+        }
+        this.getArenal = function () {
+            let s = Math.PI * radius * radius;
+            return s;
+        }
+        this.setRadius = function () {
+            this.radius = parseInt(radius);
+        }
+        this.setColor = function () {
+            this.color = parseFloat(color);
+        }
+    };
+    let Circle = new MyCircle(5, "blu")
+    let radius=Circle.getRadius();
+    let arenal=Circle.getArenal();
+    alert("radius= "+radius+" arenal= "+arenal);
+
+</script>
+</body>
+</html>
